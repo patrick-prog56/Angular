@@ -1,0 +1,8 @@
+#img-bg{
+    background-image: url('https://cdn.pocket-lint.com/r/s/1200x/assets/images/142227-phones-review-iphone-x-review-photos-image1-ahdsiyvum0.jpg');
+
+    min-height: 695px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
