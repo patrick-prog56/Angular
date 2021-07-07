@@ -32,7 +32,7 @@ export class EntrarComponent implements OnInit {
       environment.id= this.userLogin.id
 
 
-      this.userLogin.foto
+    
 
 
       this.router.navigate(['/inicio'])
