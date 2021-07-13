@@ -13,11 +13,14 @@ import { AuthService } from '../service/auth.service';
 export class EntrarComponent implements OnInit {
 
   userLogin: UserLogin = new UserLogin()
+  alertas: AlertasService
 
   constructor(
     private auth: AuthService,
     private router : Router,
+
     private alertas: AlertasService
+
   ) { }
 
   ngOnInit() {
@@ -32,6 +35,7 @@ export class EntrarComponent implements OnInit {
       environment.nome= this.userLogin.nome
       environment.foto= this.userLogin.foto
       environment.id= this.userLogin.id
+      environment.tipo=this.userLogin.tipo
 
 
     
@@ -40,7 +44,9 @@ export class EntrarComponent implements OnInit {
       this.router.navigate(['/inicio'])
     }, erro =>{
       if (erro.status == 500) {
-        this.alertas.showAlertDanger('Oh, ouh! Parece que você digitou usuário ou senha errado, tente novamente!')
+
+        this.alertas.showAlertDanger ('Oh, ouh! Parece que você digitou usuário ou senha errado, tente novamente!')
+
       }
     })
   }
