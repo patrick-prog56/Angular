@@ -17,7 +17,8 @@ export class TemaComponent implements OnInit {
   alertas: AlertasService
   constructor(
     private router : Router,
-    private temaService: TemaService
+    private temaService: TemaService,
+    private alertas: AlertasService
     
   ) { }
 

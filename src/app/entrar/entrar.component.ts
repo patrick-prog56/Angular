@@ -18,6 +18,9 @@ export class EntrarComponent implements OnInit {
   constructor(
     private auth: AuthService,
     private router : Router,
+
+    private alertas: AlertasService
+
   ) { }
 
   ngOnInit() {
@@ -41,7 +44,9 @@ export class EntrarComponent implements OnInit {
       this.router.navigate(['/inicio'])
     }, erro =>{
       if (erro.status == 500) {
+
         this.alertas.showAlertDanger ('Oh, ouh! Parece que você digitou usuário ou senha errado, tente novamente!')
+
       }
     })
   }
