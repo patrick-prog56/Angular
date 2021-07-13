@@ -5,7 +5,7 @@ export class Postagem{
     public id: number
     public titulo: number
     public texto: number
-    public date: Date
+    public data: Date
     public usuario: User
     public tema: Tema
 
