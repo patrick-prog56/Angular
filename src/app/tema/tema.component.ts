@@ -14,7 +14,7 @@ export class TemaComponent implements OnInit {
 
   tema:Tema = new Tema()
   listaTemas: Tema[]
-  alertas: AlertasService
+ 
   constructor(
     private router : Router,
     private temaService: TemaService,
