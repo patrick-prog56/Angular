@@ -1,3 +1,8 @@
+Front end do meu blog pessoal. Blog este que possibilita a criação de usuario, logar, criar temas e fazer postagens. Feito com Typescript, Javascript, Html, Css, Bootstrap e o Framework Angular,  desenvolvido por mim.
+
+
+
+
 # BlogPessoal
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.4.
